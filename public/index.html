@@ -1,0 +1,32 @@
+<!-- public/formulaire.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Hotcrp | dataset</title>
+</head>
+<body>
+  <h1>Formulaire de collecte de données -  Hotcrp</h1>
+  <form action="/donnees" method="POST" class="form">
+    <div>
+      <label for="langue">Langue:</label>
+      <input type="text" id="langue" name="langue" required>
+    </div>
+    <div>
+      <label for="mots">Mots:</label>
+      <input type="text" id="mots" name="mots" required>
+    </div>
+    <div>
+      <label for="contexte_positif">Contexte positif:</label>
+      <textarea id="contexte_positif" name="contexte_positif" required></textarea>
+    </div>
+    <div>
+      <label for="contexte_negatif">Contexte négatif:</label>
+      <textarea id="contexte_negatif" name="contexte_negatif" required></textarea>
+    </div>
+    <button type="submit">Enregistrer</button>
+  </form>
+</body>
+</html>

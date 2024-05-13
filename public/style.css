@@ -1,0 +1,47 @@
+/* Styles de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(70, 60, 60);
+    margin: 0 auto;
+    max-width: 50%; /* Utilisation de max-width pour que la largeur ne dépasse pas 50% */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 50%; /* Utilisation de max-width pour que la largeur ne dépasse pas 50% */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box; /* Ajout de box-sizing pour inclure le padding dans la largeur */
+}
+
+button[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Media queries pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    body, .form {
+        max-width: 100%; /* Pour les écrans plus petits, la largeur maximale sera de 100% */
+    }
+}
